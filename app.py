@@ -19,7 +19,7 @@ os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # Model saved with Keras model.save()
-MODEL_PATH = 'models/modelres50.h5'
+MODEL_PATH = 'backend/models/modelres50.h5'
 
 #Load your trained model
 model = load_model(MODEL_PATH)
@@ -44,13 +44,13 @@ def model_predict(img_path, model):
     return pred
 
 
-@app.route('/', methods=['GET'])
+@app.route('/backend', methods=['GET'])
 def index():
     # Main page
     return render_template('index.html')
 
 predictions = []
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/backend/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'POST':
         # Get the file from post request
