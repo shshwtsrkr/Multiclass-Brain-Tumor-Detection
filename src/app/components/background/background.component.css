@@ -1,0 +1,36 @@
+*{
+  z-index: 1;
+}
+.webgl{
+  position: absolute;
+}
+.cardHolder{
+  display: flex;
+  justify-content: space-between;
+}
+.in1{
+  width: 650px;
+  height: 1000px;
+  background: white;
+  color: transparent;
+  mix-blend-mode: difference;
+  text-align: center;
+}
+.in1 h1{
+  color: black;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.in2{
+  background: red;
+  width: 650px;
+  height: 1000px;
+  mix-blend-mode: difference;
+  text-align: center;
+}
+.in2 p{
+  line-height: 50px;
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+}

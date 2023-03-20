@@ -1,0 +1,22 @@
+<mat-drawer-container class="sidenavCont" autosize>
+  <mat-toolbar class="toolBar">
+    <button (click)="drawer.toggle()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Brain Tumor detection and classification</span>
+    <!--  <button mat-raised-button color="primary"-->
+    <!--          matBadge="8" matBadgePosition="before" matBadgeColor="accent">-->
+    <!--    Actions-->
+    <!--  </button>-->
+  </mat-toolbar>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <div class="sidenavContent">
+      <mat-nav-list class="sidenavList">
+        <a class="sidenavListLinks" (click)="drawer.toggle()" mat-list-item [routerLink]="['']">About</a>
+        <a class="sidenavListLinks" (click)="drawer.toggle()" mat-list-item [routerLink]="['', 'webpage']">Tumor Detection</a>
+      </mat-nav-list>
+    </div>
+  </mat-drawer>
+  <router-outlet></router-outlet>
+</mat-drawer-container>
+
