@@ -3,7 +3,7 @@ flask
 numpy
 gevent
 h5py
-tensorflow-macos
+tensorflow
 gunicorn
 Pillow
 matplotlib
