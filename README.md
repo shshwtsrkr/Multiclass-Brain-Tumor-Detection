@@ -37,8 +37,8 @@ The main criteria of this hackathon is that we would **have** to use atleast one
 # Checklist
 - [x] Learning about oneAPI resources
 - [x] Learning about oneAPI DevCloud
-- [ ] Satisfactory work done on AI/ML portion of Problem Statement 
-- [ ] FrontEnd Development
+- [x] Satisfactory work done on AI/ML portion of Problem Statement 
+- [x] FrontEnd Development
 - [ ] Integrating and forming a fully-functional AI/ML solution Application
 - [ ] Deploying the application on oneAPI DevCloud
 - [ ] Prepare proper Documentation with clear and concise instructions to run the application
