@@ -34,13 +34,55 @@ The main criteria of this hackathon is that we would **have** to use atleast one
 * Youtube Video / Medium blog describing the project.
 * Images / Snapshot and videos to be included.
 
+# [Medium Blog](https://medium.com/@arnabroy02/brain-tumor-classification-using-resnet50-3f8648958799) Describing the project
+We've have written a medium blog describing the project.  
+Giving a brief introduction, background, dataset, neural architecture,  
+How we trained the model and the Results we achieved.
+You can feel free to read the medium blog [here](https://medium.com/@arnabroy02/brain-tumor-classification-using-resnet50-3f8648958799) :) 
+
+# [Jupyter Notebook](brain_tumor_detection.ipynb)
+The Jupyter notebook that contains the code used to train the model can be viewed [here](brain_tumor_detection.ipynb).
+
+# Instructions to run the the code
+1. Git clone the repo
+``` yaml
+git clone https://github.com/shshwtsrkr/Multiclass-Brain-Tumor-Detection
+```
+2. Install all dependencies for angular
+```yaml
+npm install
+```
+3. To serve the project on localhsot
+```yaml 
+ng serve
+```
+OR to serve and open the frontend application in the default browser
+```yaml
+ng serve --open
+```
+3. Install all python dependencies for the flask server working the backend
+```yaml
+pip install -r requirements.txt
+```
+4. Finally run the flask server which would then connect the frontend application and use the model file to accurately determine the type of tumor(Glioma, Meningioma and Pituitary) or No tumour.
+```yaml
+flask run
+```
+
+# Demonstration of the project
+A live demo of the project can be seen [here](https://drive.google.com/file/d/1gWG_HQkUjpnSZS-H_UEMlfTLc5HfdIeT/view?usp=sharing)
+
+## License
+
+Our project is distributed under the MIT License. [MIT](LICENSE)
+
 # Checklist
 - [x] Learning about oneAPI resources
 - [x] Learning about oneAPI DevCloud
 - [x] Satisfactory work done on AI/ML portion of Problem Statement 
 - [x] FrontEnd Development
-- [ ] Integrating and forming a fully-functional AI/ML solution Application
-- [ ] Deploying the application on oneAPI DevCloud
-- [ ] Prepare proper Documentation with clear and concise instructions to run the application
-- [ ] Preparing a Youtube Video/Medium blog describing the project.
-- [ ] Evaluate the project and then Submission
+- [x] Integrating and forming a fully-functional AI/ML solution Application
+- [x] Deploying the application on oneAPI DevCloud
+- [x] Prepare proper Documentation with clear and concise instructions to run the application
+- [x] Preparing a Youtube Video/Medium blog describing the project.
+- [x] Evaluate the project and then Submission
