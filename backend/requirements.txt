@@ -1,9 +1,0 @@
-Werkzeug
-flask
-numpy
-gevent
-h5py
-tensorflow-macos
-gunicorn
-Pillow
-matplotlib
