@@ -1,0 +1,24 @@
+<div class="picUpload">
+  <div [@diseaseState]="cancerState" class="card">
+    <h1>Provide an MRI scan</h1>
+    <p>Upload an image for detection</p>
+    <img #imgTag src="https://picsum.photos/400">
+    <label for="input-image">Upload image</label>
+    <input #inputTag type="file" accept="image/jpeg, imgae/png, image/jpg" id="input-image">
+    <button *ngIf="divStage === 'notNeeded'" class="predict" (click)="uploadPredict()">Detect</button>
+    <button *ngIf="divStage === 'needed'"  class="predictEncore" (click)="reset()">Classify another?</button>
+  </div>
+  <div class="desc" [@divState]="divStage">
+    <br>
+    <h1>Description</h1>
+    <p>
+      {{currentPara}}
+    </p>
+    <br>
+    <br>
+    <h1 *ngIf="cancerState != 'No Tumour' && cancerState != 'neutral'">Treatment</h1>
+    <ul *ngIf="cancerState != 'No Tumour' && cancerState != 'neutral'">
+      <li *ngFor="let treat of currentTreatment"><p>{{treat}}</p></li>
+    </ul>
+  </div>
+</div>
